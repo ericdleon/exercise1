@@ -1,0 +1,105 @@
+/* Linear Layout by Default */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 0 2px;
+}
+
+.container {
+  width: 800px;
+  padding: 10px 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+nav ul li a {
+  padding: 4px 6px;
+}
+
+nav ul li a:first-child {
+  padding-left: 0px;
+}
+
+.layoutControl li {
+  display: inline-block;
+}
+
+.layoutControl li:not(:first-child):not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.layoutControl li:nth-child(2) {
+  padding-right: 5px;
+}
+
+.layoutControl li:last-child {
+  padding-left: 5px;
+}
+
+.layoutControl li:not(:first-child):not(:nth-child(2)):not(:last-child) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+aside {
+  width: 25%;
+}
+
+aside ul {
+  padding-left: 23px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.picture {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
+.image1 {
+  content: url(image1.jpg);
+}
+.image2 {
+  content: url(image2.jpg);
+}
+
+.image1:hover {
+  content: url(image1over.jpg);
+}
+.image2:hover {
+  content: url(image2over.jpg);
+}
+
+footer {
+  margin-bottom: 25px;
+  float: none;
+}
+
+.clearfix {
+  content: '';
+  clear: both;
+}
