@@ -17,21 +17,30 @@
           </ul>
         </nav>
         <div>
-          <ul class="layoutControl">
+          <ul class="layoutControl" id="checkActive">
             <li><p>Layout :</p></li>
             <li>
-              <button id="linear" onclick="changeDisplay('linear')">
+              <button
+                id="linear"
+                class="btn active"
+                onclick="changeDisplay('linear')"
+              >
                 Linear
               </button>
             </li>
             <li>
-              <button id="left-sidebar" onclick="changeDisplay('leftSidebar')">
+              <button
+                id="left-sidebar"
+                class="btn"
+                onclick="changeDisplay('leftSidebar')"
+              >
                 Left Sidebar
               </button>
             </li>
             <li>
               <button
                 id="center-sidebar"
+                class="btn"
                 onclick="changeDisplay('centerSidebar')"
               >
                 Center Sidebar
@@ -40,6 +49,7 @@
             <li>
               <button
                 id="right-sidebar"
+                class="btn"
                 onclick="changeDisplay('rightSidebar')"
               >
                 Right Sidebar
